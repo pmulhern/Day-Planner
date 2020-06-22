@@ -1,6 +1,4 @@
-        // console.log(moment("2020-06-19").isBefore("2020-06-20"));
-        // console.log(moment());
-        
+     
         var now = moment().format('h');
         var timeHeader = moment().format('dddd MMMM Do');
         console.log(now)
@@ -24,20 +22,10 @@
             console.log(nowStr);
 
             var check = timeInt < nowInt;
-            console.log(check);
-            
-            function timeCheck() {for (i = 0; i < time.length; i++) {
-                if (time[i] > nowInt) {
-                    "True"
-                    $( "input" ).removeClass("past").addClass("present")
-                }else {
-                    "False"
-                    $( "input" ).removeClass("past").addClass("future")
-                    // document.querySelectorAll(".past").setAttribute("class", "future");
-                }
-            }};
+            console.log(check);          
 
-            timeCheck();
+let newNow = moment().format('h:mm:ss');
+console.log(newNow);
 
 //6AM Timeslot
 let submitBtn6 = document.getElementById("6amBtn");
@@ -49,17 +37,28 @@ alert("Your task has been saved")
 });
 let input6 = document.getElementById("6");
 input6.value = localStorage.getItem("6AM");
+// if(moment().format('h:mm:ss') < '6:00:00') {
+//     alert ("true")
+//  } else {
+//         alert ("Not True")
+//     }
+
+
 
 //7AM Timeslot
+//Submit to Local
 let submitBtn7 = document.getElementById("7amBtn");
 submitBtn7.addEventListener("click",function() {
     event.preventDefault();
 let input7 = document.getElementById("7").value;
 localStorage.setItem("7AM", input7);
-alert("Your task has been saved")
+alert("Your task has been saved");
 });
+//Retrieve from Local
 let input7 = document.getElementById("7");
 input7.value = localStorage.getItem("7AM");
+// Time/ Color logic
+
 
 //8AM Timeslot
 let submitBtn8 = document.getElementById("8amBtn");
@@ -103,7 +102,7 @@ localStorage.setItem("11AM", input11);
 alert("Your task has been saved")
 });
 let input11 = document.getElementById("11");
-input11.value = localStorage.getItem("11AM");
+input11.value = localStorage.getItem("11AM");      
 
 //12PM Timeslot
 let submitBtn12 = document.getElementById("12pmBtn");
@@ -172,12 +171,75 @@ let input5 = document.getElementById("5");
 input5.value = localStorage.getItem("5PM");
 
 
+// 11AM
+if(moment().format('h:mm:ss')>('11:00:00') && moment().format('h:mm:ss')<('11:59:59')) {
+    // alert ("11 AM Present");
+    // document.getElementByID("11").setAttribute("class", "present")
+ } 
+ else if (moment().format('h:mm:ss')<('10:59:59')){
+        // alert ("11 AM Future");
+        // document.getElementByID("11").setAttribute("class", "future")
+  } else if(moment().format('h:mm:ss')>('11:59:59')) {
+            // alert ("11 AM Past");
+            // document.getElementByID("11").setAttribute("class", "past")
+                };
+
+// 12PM
+if(moment().format('h:mm:ss')>('12:00:00') && moment().format('h:mm:ss')<('12:59:59')) {
+    // alert ("12 PM Present");
+    // document.getElementByID("12").setAttribute("class", "present")
+ } 
+ else if (moment().format('h:mm:ss')<('11:59:59')){
+        // alert ("12 PM Future");
+        // document.getElementByID("12").setAttribute("class", "future")
+  } else if(moment().format('h:mm:ss')>('12:59:59')) {
+            // alert ("12 PM Past");
+            // document.getElementByID("12").setAttribute("class", "past")
+                };
+
+// 1PM
+if(moment().format('h:mm:ss')>('1:00:00') && moment().format('h:mm:ss')<('1:59:59')) {
+    // alert ("1 PM Present");
+    // document.getElementByID("1").setAttribute("class", "present")
+ } 
+ else if (moment().format('h:mm:ss')<('12:59:59')){
+        // alert ("1 PM Future");
+        // document.getElementByID("1").setAttribute("class", "future")
+  } else if(moment().format('h:mm:ss')>('1:59:59')) {
+            // alert ("1 PM Past");
+            // document.getElementByID("1").setAttribute("class", "past")
+                };
 
 
+// 4PM
 
+let fourPM = document.getElementById("4")
+if(moment().format('h:mm:ss')>('4:00:00') && moment().format('h:mm:ss')<('4:59:59')) {
+    // alert ("4 PM Present");
+    fourPM.setAttribute("class", "col-sm-10 present")
+ } 
+ else if (moment().format('h:mm:ss')<('3:59:59')){
+        // alert ("4 PM Future");
+        fourPM.setAttribute("class", "col-sm-10 future")
+  } else if(moment().format('h:mm:ss')>('4:59:59')) {
+            // alert ("4 PM Past");
+            fourPM.setAttribute("class", "col-sm-10 past")
+  }
 
+// 5PM
 
-
+let fivePM = document.getElementById("5")
+if(moment().format('h:mm:ss')>('5:00:00') && moment().format('h:mm:ss')<('5:59:59')) {
+    // alert ("5 PM Present");
+    fivePM.setAttribute("class", "col-sm-10 present")
+ } 
+ else if (moment().format('h:mm:ss')<('4:59:59')){
+        // alert ("5 PM Future");
+        fivePM.setAttribute("class", "col-sm-10 future")
+  } else if(moment().format('h:mm:ss')>('5:59:59')) {
+            // alert ("5 PM Past");
+            fivePM.setAttribute("class", "col-sm-10 past")
+  }
 
 
 
