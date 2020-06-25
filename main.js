@@ -1,6 +1,6 @@
      
 var now = moment().format('h');
-var timeHeader = moment().format('dddd MMMM Do');
+var timeHeader = moment().format('dddd, MMMM Do');
 console.log(now)
 document.getElementById("currentDay").innerHTML=timeHeader;
 
@@ -146,82 +146,82 @@ input5.value = localStorage.getItem("5PM");
 
 // 6AM
 
-let sixAM = document.getElementById("6")
-if(moment().format('H:mm:ss')>('06:00:00') && moment().format('H:mm:ss')<('06:59:59')) {
-    // alert ("6 AM Present");
-    sixAM.setAttribute("class", "col-sm-10 present")
- } 
- else if (moment().format('H:mm:ss')<('05:59:59')){
-        // alert ("6 AM Future");
-        sixAM.setAttribute("class", "col-sm-10 future")
+// let sixAM = document.getElementById("6")
+// if(moment().format('H:mm:ss')>('06:00:00') && moment().format('H:mm:ss')<('06:59:59')) {
+//     // alert ("6 AM Present");
+//     sixAM.setAttribute("class", "col-sm-10 present")
+//  } 
+//  else if (moment().format('H:mm:ss')<('05:59:59')){
+//         // alert ("6 AM Future");
+//         sixAM.setAttribute("class", "col-sm-10 future")
 
-  } else if(moment().format('H:mm:ss')>('06:59:59')) {  
-            // alert ("6 AM Past");
-            sixAM.setAttribute("class", "col-sm-10 past")
-  }
+//   } else if(moment().format('H:mm:ss')>('06:59:59')) {  
+//             // alert ("6 AM Past");
+//             sixAM.setAttribute("class", "col-sm-10 past")
+//   }
 
-// 7AM
+// // 7AM
 
-let sevenAM = document.getElementById("7")
-if(moment().format('H:mm:ss')>('07:00:00') && moment().format('H:mm:ss')<('07:59:59')) {
-    // alert ("7 AM Present");
-    sevenAM.setAttribute("class", "col-sm-10 present")
- } 
- else if (moment().format('H:mm:ss')<('06:59:59')){
-        // alert ("7 AM Future");
-        sevenAM.setAttribute("class", "col-sm-10 future")
+// let sevenAM = document.getElementById("7")
+// if(moment().format('H:mm:ss')>('07:00:00') && moment().format('H:mm:ss')<('07:59:59')) {
+//     // alert ("7 AM Present");
+//     sevenAM.setAttribute("class", "col-sm-10 present")
+//  } 
+//  else if (moment().format('H:mm:ss')<('06:59:59')){
+//         // alert ("7 AM Future");
+//         sevenAM.setAttribute("class", "col-sm-10 future")
 
-  } else if(moment().format('H:mm:ss')>('07:59:59')) {  
-            // alert ("7 AM Past");
-            sevenAM.setAttribute("class", "col-sm-10 past")
-  }
+//   } else if(moment().format('H:mm:ss')>('07:59:59')) {  
+//             // alert ("7 AM Past");
+//             sevenAM.setAttribute("class", "col-sm-10 past")
+//   }
 
-// 8AM
+// // 8AM
 
-let eightAM = document.getElementById("8")
-if(moment().format('H:mm:ss')>('08:00:00') && moment().format('H:mm:ss')<('08:59:59')) {
-    // alert ("8 AM Present");
-    eightAM.setAttribute("class", "col-sm-10 present")
- } 
- else if (moment().format('H:mm:ss')<('07:59:59')){
-        // alert ("8 AM Future");
-        eightAM.setAttribute("class", "col-sm-10 future")
+// let eightAM = document.getElementById("8")
+// if(moment().format('H:mm:ss')>('08:00:00') && moment().format('H:mm:ss')<('08:59:59')) {
+//     // alert ("8 AM Present");
+//     eightAM.setAttribute("class", "col-sm-10 present")
+//  } 
+//  else if (moment().format('H:mm:ss')<('07:59:59')){
+//         // alert ("8 AM Future");
+//         eightAM.setAttribute("class", "col-sm-10 future")
 
-  } else if(moment().format('H:mm:ss')>('08:59:59')) {  
-            // alert ("8 AM Past");
-            eightAM.setAttribute("class", "col-sm-10 past")
-  }
+//   } else if(moment().format('H:mm:ss')>('08:59:59')) {  
+//             // alert ("8 AM Past");
+//             eightAM.setAttribute("class", "col-sm-10 past")
+//   }
 
-// 9AM
+// // 9AM
 
-let nineAM = document.getElementById("9")
-if(moment().format('H:mm:ss')>('09:00:00') && moment().format('H:mm:ss')<('09:59:59')) {
-    // alert ("10 AM Present");
-    nineAM.setAttribute("class", "col-sm-10 present")
- } 
- else if (moment().format('H:mm:ss')<('08:59:59')){
-        // alert ("10 AM Future");
-        nineAM.setAttribute("class", "col-sm-10 future")
+// let nineAM = document.getElementById("9")
+// if(moment().format('H:mm:ss')>('09:00:00') && moment().format('H:mm:ss')<('09:59:59')) {
+//     // alert ("10 AM Present");
+//     nineAM.setAttribute("class", "col-sm-10 present")
+//  } 
+//  else if (moment().format('H:mm:ss')<('08:59:59')){
+//         // alert ("10 AM Future");
+//         nineAM.setAttribute("class", "col-sm-10 future")
 
-  } else if(moment().format('H:mm:ss')>('09:59:59')) {  
-            // alert ("10 AM Past");
-            nineAM.setAttribute("class", "col-sm-10 past")
-  }
+//   } else if(moment().format('H:mm:ss')>('09:59:59')) {  
+//             // alert ("10 AM Past");
+//             nineAM.setAttribute("class", "col-sm-10 past")
+//   }
 
-// 10AM
+// // 10AM
 
-let tenAM = document.getElementById("10")
-if(moment().format('H:mm:ss')>('10:00:00') && moment().format('H:mm:ss')<('10:59:59')) {
-    // alert ("10 AM Present");
-    tenAM.setAttribute("class", "col-sm-10 present")
- } 
- else if (moment().format('H:mm:ss')<('09:59:59')){
-        // alert ("10 AM Future");
-        tenAM.setAttribute("class", "col-sm-10 future")
-  } else if(moment().format('H:mm:ss')>('10:59:59')) {  
-            // alert ("10 AM Past");
-            tenAM.setAttribute("class", "col-sm-10 past")
-  }
+// let tenAM = document.getElementById("10")
+// if(moment().format('H:mm:ss')>('10:00:00') && moment().format('H:mm:ss')<('10:59:59')) {
+//     // alert ("10 AM Present");
+//     tenAM.setAttribute("class", "col-sm-10 present")
+//  } 
+//  else if (moment().format('H:mm:ss')<('09:59:59')){
+//         // alert ("10 AM Future");
+//         tenAM.setAttribute("class", "col-sm-10 future")
+//   } else if(moment().format('H:mm:ss')>('10:59:59')) {  
+//             // alert ("10 AM Past");
+//             tenAM.setAttribute("class", "col-sm-10 past")
+//   }
 
 // 11AM
 

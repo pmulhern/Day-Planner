@@ -26,179 +26,67 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">moment().format('dddd');</p>
+      <!-- todo: make this work -->
+      <p id="currentDay" class="lead"></p>
       <button id=clearBtn>Clear All Events</button>
     </header>
 
     <!-- Timeblocks go here -->
-    <div class="container sm-12">
+    <div class="container sm-12 mainSchedule" id="main">
        
-        <div class="row" > 
-            <div class="time col-sm-1" id="6AM" value = 6AM>6AM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="6">         
-            <button class="saveBtn col-sm-1" id="6amBtn">Save</button>            
-        </div> 
-        <div class="row"> 
-            <div class="time col-sm-1" id="7AM">7AM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here"id="7">         
-            <button class="saveBtn col-sm-1" id="7amBtn">Save</button>   
-        </div> 
-        <div class="row"> 
-            <div class="time col-sm-1" id="8AM">8AM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="8">         
-            <button class="saveBtn col-sm-1" id="8amBtn">Save</button>            
-        </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="9AM">9AM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="9">         
-            <button class="saveBtn col-sm-1" id="9amBtn">Save</button>            
+            <input type="text" class="col-sm-10 color" data-hour="9" placeholder="Enter Task Here" id="text-9">         
+            <button class="saveBtn col-sm-1" id="9-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="10AM">10AM</div>
-            <input type="text" class="col-sm-10 past"  placeholder="Enter Task Here"id="10">         
-            <button class="saveBtn col-sm-1" id="10amBtn">Save</button>            
+            <input type="text" class="col-sm-10 color"  data-hour="10" placeholder="Enter Task Here"id="text-10">         
+            <button class="saveBtn col-sm-1" id="10-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="11AM">11AM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here"id="11">         
-            <button class="saveBtn col-sm-1" id="11amBtn">Save</button>            
+            <input type="text" class="col-sm-10 color"data-hour="11" placeholder="Enter Task Here"id="text-11">         
+            <button class="saveBtn col-sm-1" id="11-Btn">Save</button>            
         </div> 
-        <div class="row">  
+        <div class="row schedule-row" >  
             <div class="time col-sm-1" id="12PM">12PM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="12">         
-            <button class="saveBtn col-sm-1" id="12pmBtn">Save</button>            
+            <input type="text" class="col-sm-10 color"data-hour="12" placeholder="Enter Task Here" id="text-12">         
+            <button class="saveBtn col-sm-1" id="12-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="1PM">1PM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="1">         
-            <button class="saveBtn col-sm-1" id="1pmBtn">Save</button>            
+            <input type="text" class="col-sm-10 color" data-hour="13"placeholder="Enter Task Here" id="text-13">         
+            <button class="saveBtn col-sm-1" id="13-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="2PM">2PM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="2">         
-            <button class="saveBtn col-sm-1" id="2pmBtn">Save</button>            
+            <input type="text" class="col-sm-10 color" data-hour="14"placeholder="Enter Task Here" id="text-14">         
+            <button class="saveBtn col-sm-1" id="14-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="3PM">3PM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="3">         
-            <button class="saveBtn col-sm-1" id="3pmBtn">Save</button>            
+            <input type="text" class="col-sm-10 color" data-hour="15"placeholder="Enter Task Here" id="text-15">         
+            <button class="saveBtn col-sm-1" id="15-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="4PM">4PM</div>
-            <input type="text" class="col-sm-10 past" placeholder="Enter Task Here" id="4">         
-            <button class="saveBtn col-sm-1" id="4pmBtn">Save</button>            
+            <input type="text" class="col-sm-10 color" data-hour="16"placeholder="Enter Task Here" id="text-16">         
+            <button class="saveBtn col-sm-1" id="16-Btn">Save</button>            
         </div> 
-        <div class="row"> 
+        <div class="row schedule-row" > 
             <div class="time col-sm-1" id="5PM">5PM</div>
-            <input type="text col-sm-10" class="past" placeholder="Enter Task Here" id="5">         
-            <button class="saveBtn col-sm-1" id="5pmBtn">Save</button>            
+            <input type="text col-sm-10" class="col-sm-10 color" data-hour="17" placeholder="Enter Task Here" id="text-17">         
+            <button class="saveBtn col-sm-1" id="17-Btn">Save</button>            
         </div> 
-      
+    </div>  
     
     <!-- </div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="main.js"></script> 
+    <script src="script.js"></script> 
 
-    <!-- <script>
-        console.log(moment("2020-06-19").isBefore("2020-06-20"));
-        console.log(moment());
-        var now = moment().format('h');
-        var timeHeader = moment().format('dddd MMMM Do');
-        console.log(now)
-        document.getElementById("currentDay").innerHTML=timeHeader;
-
-            var time= $(".time").map(function() {
-            return $(this).text();
-            }).get();
-            console.log(time);
-
-            var timeInt= parseInt(time);
-            console.log(timeInt++);
-
-            timeInt = timeInt + 1
-            console.log(timeInt);
-
-            var nowInt = parseInt(now);
-            console.log(nowInt);
-
-            var nowStr = now.toString();
-            console.log(nowStr);
-
-
-            var check = timeInt < nowInt;
-            console.log(check);
-
-            
-            function timeCheck() {for (i = 0; i < time.length; i++) {
-                if (time[i] > nowInt) {
-                    "True"
-                    $( "input" ).removeClass("past").addClass("present")
-                }else {
-                    "False"
-                    $( "input" ).removeClass("past").addClass("future")
-                    // document.querySelectorAll(".past").setAttribute("class", "future");
-                }
-            }};
-
-            timeCheck();
-
-            // const control = document.querySelectorAll(".time");
-            //     // time.forEach(fakeImage => 
-            //     console.log(time);
-                
-
-            // console.log(control)
-
-            // console.log(moment().format('h a')>"6AM");
-
-        // document.getElementById("6am").value
-        
-        // function changeColor() {
-        //     if (document.querySelectorAll(".time").value < now) {
-        //         document.querySelectorAll(".past").element.setAttribute("class", "past");
-        //     }else if (document.querySelectorAll(".time").value = now) {
-        //         document.querySelectorAll(".past").element.setAttribute("class", "present");
-        //     } else {
-        //         document.querySelectorAll(".past").element.setAttribute("class", "future");
-        //     }};
-
-        // changeColor();
-
-        // const demoClasses = document.querySelectorAll(".time")
-        // console.log(demoClasses[1])
-
-        // const demoClass2 = document.getElementsByClassName(".time")
-        // console.log(demoClass2)
-
-
-        // if (document.querySelectorAll(".time").value < now) {
-        //     document.querySelectorAll(".past").element.setAttribute("class", "past");
-        //     }else if (document.querySelectorAll(".time").value = now) {
-        //         "Neither"
-        //     } else {
-        //         "False"
-        //     };
-
-            // const check = document.querySelectorAll(".time");
-            // console.log(check[0].firstChild.value);
-
-            // let check = $('.time').text();
-            // console.log(check)
-
-            // let newCheck = document.getElementById("6AM").innerHTML
-            // console.log(newCheck);
-
-            // let check = document.querySelector(".time").innerHTML
-            // console.log(check)
-
-            // const time = document.querySelectorAll(".time");
-	        // for (var i = 0; i < time.length; i++) {
-	        // console.log(time[i]);
-            // }
-            
-            // const time2 = $(".time .text-field");
-            // console.log(time2); -->
+    
 
     </script>
   </body>
