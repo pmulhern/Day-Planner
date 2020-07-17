@@ -19,4 +19,6 @@ The time slots change colors as the hours progress:
 ```
 Majority of functional code is leveraging JavaScript and jQuery with special emphasis on each and for loops to cut down on repitive code.  The HTML is a little repetitive and later I will attempt a more DRY apprach by appending HTML elements via for loop.
 
+```
+
 Link: https://pmulhern.github.io/Day-Planner/
