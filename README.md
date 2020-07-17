@@ -2,6 +2,10 @@
 
 This is a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and leverages the Moment.js library.
 
+Deployed Application: https://pmulhern.github.io/Day-Planner/
+
+![](WorkDayScheduler.jpg)
+
 ## Aplication
 
 ```
@@ -21,4 +25,4 @@ Majority of functional code is leveraging JavaScript and jQuery with special emp
 
 ```
 
-Link: https://pmulhern.github.io/Day-Planner/
+
