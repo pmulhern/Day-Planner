@@ -6,6 +6,7 @@ Deployed Application: https://pmulhern.github.io/Day-Planner/
 
 ![](WorkDayScheduler.jpg)
 
+
 ## Aplication
 
 ```
@@ -17,6 +18,7 @@ The time slots change colors as the hours progress:
     Blue - Represents the current hour
     Green - Represents future time periods
 ```
+
 
 ## Code
 
